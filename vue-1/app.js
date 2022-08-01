@@ -1,14 +1,14 @@
 Vue.createApp({
-  data(){
-    return{
+  data() {
+    return {
       listOfThings: [],
       inputValue: ''
     };
   },
   methods: {
-      addStuff(){
-        this.listOfThings.push(this.inputValue);
-        this.inputValue="";
-      }
+    addStuff() {
+      this.listOfThings.push(this.inputValue);
+      this.inputValue = "";
+    }
   }
 }).mount('#app');
