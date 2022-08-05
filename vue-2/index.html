@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vue-1</title>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      <label for="list-of-things_input">List</label>
+      <input type="text" id="list-of-things_input" v-model="inputValue" />
+      <button v-on:click="addStuff">Add Stuff</button>
+    </div>
+    <ul>
+      <li>An item</li>
+      <li v-for="thing in listOfThings">{{thing}}</li>
+    </ul>
+
+    <a v-bind:href="this.link">fancy link</a>
+  </div>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
